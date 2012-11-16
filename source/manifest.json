@@ -1,0 +1,22 @@
+{
+  "name": "vimeoのfontをメイリオで",
+  "version": "0.1",
+  "permissions": ["geolocation"],
+  "manifest_version": 2,
+  "content_scripts": [
+    {
+      "matches": [
+	"http://*.vimeo.com/*",
+	"https://*.vimeo.com/*"
+	],
+      "js": [
+        "jquery.min.1.8.2.js",
+        "font-change.js"
+	]
+    }
+  ],
+  "page_action": {
+    "default_icon": "vimeo_logo_white_on_blue.png",
+    "default_title": "Do action"
+  }
+}
